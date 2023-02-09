@@ -5,11 +5,9 @@ import java.util.*;
 
 public class ExecuteTaskService implements ExecuteTask {
     private final TaskUtil taskUtil;
-
     private final ManageProjectDetails manageProjectDetails;
-    Map<String, List<Task>> tasks;
-    PrintWriter out;
-    Long lastId;
+    private final Map<String, List<Task>> tasks;
+    private final PrintWriter out;
 
    public ExecuteTaskService(Map<String, List<Task>> tasks, PrintWriter out) {
         this.tasks = tasks;
