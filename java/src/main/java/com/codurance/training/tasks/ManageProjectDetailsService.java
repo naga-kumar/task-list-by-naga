@@ -7,9 +7,9 @@ public class ManageProjectDetailsService implements ManageProjectDetails{
 
     private final AddTask addTask;
 
-    private Map<String, List<Task>> tasks;
+    private final Map<String, List<Task>> tasks;
 
-    private PrintWriter out;
+    private final PrintWriter out;
 
     public ManageProjectDetailsService(Map<String, List<Task>> tasks, PrintWriter out) {
         this.tasks = tasks;
