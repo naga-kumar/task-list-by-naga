@@ -5,8 +5,8 @@ import java.util.*;
 
 public class AddTaskService implements AddTask {
 
-    Map<String, List<Task>> tasks;
-    PrintWriter out;
+    private final Map<String, List<Task>> tasks;
+    private final PrintWriter out;
 
     private Long lastId;
 
